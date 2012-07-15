@@ -1,7 +1,7 @@
 layout : disqus
 disqus :
   short_name : jekyllbootstrap
-livefyre :
+livefyre : 
   site_id : 123
 intensedebate :
   account : 123abc

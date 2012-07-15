@@ -1,10 +1,10 @@
 title : Blog Title
 tagline: Blog Tagline
 author :
-  name : Firstname Lastname
+  name : Ramnath Vaidyanathan
   email : blah@email.test
-  github : username
-  twitter : username
+  github : ramnathv
+  twitter : ramnath_vaidya
   feedburner : feedname
 
 navigation :
@@ -13,4 +13,4 @@ navigation :
   - categories.html
   - pages.html
   - about.md
-  
+  - new.md

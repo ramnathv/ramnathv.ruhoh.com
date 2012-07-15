@@ -1,0 +1,54 @@
+---
+layout: quiz
+---
+
+<script>
+var quizJSON = {
+            "info": {
+            "name": "Did I Get This?",
+           "main": "<p>Let us test whether you got this right...</p>",
+           "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
+           "level1": "Jeopardy Ready",
+           "level2": "Jeopardy Contender",
+           "level3": "Jeopardy Amateur",
+           "level4": "Jeopardy Newb",
+           "level5": "Stay in School.. Kid.." 
+           },
+           "questions": [
+            {
+            "q": "What is the sample space in this case?",
+           "a": [
+            {
+            "option": "S = { (M1, F1), (M1, F2), (M2, F1), (M2, F2), (M1, M2), (F1, F2) }",
+           "correct": false 
+           },
+           {
+            "option": "S = { (M1, F1), (F1, M1), (M1, F2), (F2, M1), (M2, F1), (F1, M2),  (M2, F2), (F2, M2), (M1, M2), (M2, M1), (F1, F2), (F2, F1) }",
+           "correct": true 
+           } 
+           ],
+           "correct": "<p><span>Spot On! </span>This sample space reflects the fact that the order in which the two are chosen matters. For example, the outcome (M1, M2) indicates that M1 was chosen to be upgraded to first class, and M2 was chosen to be upgraded to business class, while (M2, M1) indicates the reverse assignment.</p>",
+           "incorrect": "<p><span>Oh No :-(</span>The sample space that you chose would be right if the order in which the two are chosen does not matter. Is this really the case here?</p>" 
+           },
+           {
+            "q": "The probability that the two chosen will be of the same gender is ________ the probability that the two will not be of the same gender",
+           "a": [
+            {
+            "option": "equal to",
+           "correct": false 
+           },
+           {
+            "option": "exactly half",
+           "correct": true 
+           },
+           {
+            "option": "exactly twice",
+           "correct": false 
+           } 
+           ],
+           "correct": "<p><span>Spot On! </span>Of the 12 outcomes, four of them consist of same gender pairs, while the remaining eight dont. </p>",
+           "incorrect": "<p><span>Oh No :-(</span>Hint: Count the number of outcomes in which the two people chosen are of the same gender.</p>" 
+           } 
+           ] 
+           } ;
+</script>

@@ -1,0 +1,153 @@
+---
+layout: quiz
+---
+
+<script>
+var quizJSON = {
+      "info": {
+      "name": "Did I Get This?",
+     "main": "<p>Let us test whether you got this right...</p>",
+     "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
+     "level1": "Jeopardy Ready",
+     "level2": "Jeopardy Contender",
+     "level3": "Jeopardy Amateur",
+     "level4": "Jeopardy Newb",
+     "level5": "Stay in School.. Kid.." 
+     },
+     "questions": [
+      {
+      "q": "The population is",
+     "a": [
+      {
+      "option": "a diverse group of US patients treated for chest pain",
+     "correct": false 
+     },
+     {
+      "option": "all US patients at risk for heart disease",
+     "correct": true 
+     },
+     {
+      "option": "a subset of 3500 from a diverse group of US patients treated for chest pain.",
+     "correct": false 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span></p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span></p>" 
+     },
+     {
+      "q": "The sampling frame is",
+     "a": [
+      {
+      "option": "a diverse group of US patients treated for chest pain",
+     "correct": true 
+     },
+     {
+      "option": "all US patients at risk for heart disease",
+     "correct": false 
+     },
+     {
+      "option": "a subset of 3500 from a diverse group of US patients treated for chest pain.",
+     "correct": false 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span></p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span></p>" 
+     },
+     {
+      "q": "The sample is",
+     "a": [
+      {
+      "option": "a diverse group of US patients treated for chest pain",
+     "correct": false 
+     },
+     {
+      "option": "all US patients at risk for heart disease",
+     "correct": false 
+     },
+     {
+      "option": "a subset of 3500 from a diverse group of US patients treated for chest pain.",
+     "correct": true 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span></p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span></p>" 
+     },
+     {
+      "q": "The research foundation identifies 5 large companies that represent a broad cross-section of patients, chooses 2 of the 5 at random, and gains access to the claims of all the companies patients. This is a case of",
+     "a": [
+      {
+      "option": "cluster sampling",
+     "correct": true 
+     },
+     {
+      "option": "simple random sampling",
+     "correct": false 
+     },
+     {
+      "option": "stratified sampling",
+     "correct": false 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span>This is a case of cluster sampling since only SOME of the companies were selected and ALL patients within the selected companies were chosen in the sample</p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span>Here is a hint. Think in terms of  (a) whether ALL or SOME of the groups were selected and (b) whether ALL or SOME within each group were selected.</p>" 
+     },
+     {
+      "q": "The 2 companies' claims are classified (depending on their origin) according to 7 geographical regions, and within each region, the sampling continues. This is a case of",
+     "a": [
+      {
+      "option": "cluster sampling",
+     "correct": false 
+     },
+     {
+      "option": "simple random sampling",
+     "correct": false 
+     },
+     {
+      "option": "stratified sampling",
+     "correct": true 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span>This is a case of stratified sampling since ALL regions were selected and only SOME counties within each region was chosen in the sample</p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span>Here is a hint. Think in terms of  (a) whether ALL or SOME of the groups were selected and (b) whether ALL or SOME within each group were selected.</p>" 
+     },
+     {
+      "q": "From each region, 5 representative counties are selected. (In total, all the claims originating from 35 counties are examined.) This is a case of",
+     "a": [
+      {
+      "option": "cluster sampling",
+     "correct": true 
+     },
+     {
+      "option": "simple random sampling",
+     "correct": false 
+     },
+     {
+      "option": "stratified sampling",
+     "correct": false 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span>This is a case of cluster sampling since only SOME of the counties were selected and ALL claims within the selected counties were chosen in the sample</p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span>Here is a hint. Think in terms of  (a) whether ALL or SOME of the groups were selected and (b) whether ALL or SOME within each group were selected.</p>" 
+     },
+     {
+      "q": "Within each county (and for each company), claims of 25 male and female patients are randomly selected",
+     "a": [
+      {
+      "option": "cluster sampling",
+     "correct": false 
+     },
+     {
+      "option": "simple random sampling",
+     "correct": false 
+     },
+     {
+      "option": "stratified sampling",
+     "correct": true 
+     } 
+     ],
+     "correct": "<p> <span> <img src = \"inst/img/correct.png\" />  Good Job! \n\t    </span>This is a case of stratified sampling, since the patients were first divided based on gender and then 25 of each gender was selected</p>",
+     "incorrect": "<p> <span> <img src = \"inst/img/wrong.png\" />  Oops No :-(\n\t    </span>Here is a hint. Are all groups of patients equally likely to being selected, or is there some grouping going on?</p>" 
+     } 
+     ] 
+     } ;
+</script>

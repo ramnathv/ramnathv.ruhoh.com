@@ -1,23 +1,20 @@
-{
-  "stylesheets" : {
-    "default" : [
-      "bootstrap.min.css",
-      "style.css"
-    ],
-   
-    "widgets" : {
-      "google_prettify" : "twitter-bootstrap.css"
-    }
+stylesheets:
+  default: ['bootstrap.min.css', 'style.css']
+  widgets:
+    google_prettify: 'twitter-bootstrap.css'
+    quiz:
+      - master.css
+      - reset.css
+      - slickQuiz.css
     
-  },
-
-  "javascripts" : {
-    "default" : [
-    ]
-  },
+javascripts:
+  default: 
+    - jquery.js
+    - bootstrap-tooltip.js
+    - bootstrap-carousel.js
+    - bootstrap-dropdown.js
+    - bootstrap-alert.js
   
-  "manifest" : {
-    "author" : "Jacob Thornton and Mark Otto",
-    "website" : "http://twitter.github.com/bootstrap"
-  }
-}
+manifest:
+  author: 'Ramnath Vaidyanathan'
+  website: 'http://ramnathv.ruhoh.com'

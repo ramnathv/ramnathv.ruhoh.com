@@ -1,0 +1,254 @@
+xpnd(c(1,2,3,4,4,5,6,7,8,9),4)
+? upper.tri
+m2 <- matrix(1:20, 4, 5)
+m2
+upper.tri(m2)
+m2[upper.tri(m2)]
+dat <- read.table(text = "A    B    value   #
+T1    T2    0.347#
+T1    T3    0.669#
+T2    T3    0.214", header = TRUE)
+dat
+outer(dat$A, dat$B)
+outer(dat$A, dat$B, 1)
+outer(dat$A, dat$B, value)
+? outer
+outer(dat$A, dat$B, function(x) 1)
+dat$A
+dat$B
+diag(3)
+diag(3) %*% dat$value
+diag(1, 3)
+kronecker(diag(1, 3), dat$value)
+pkgs <- installed.packages(priority='NA')[,'Package']#
+save(pkgs, file="installed_pkgs.rda")
+dir()
+system('mv installed_pkgs.rda', '~/Desktop')
+system('mv installed_pkgs.rda ~/Desktop')
+dir()
+dir('~/Desktop')
+length(pkgs)
+library(foreign)
+grades <- read.mtw('~/Downloads/gradebook.mtw')
+grades <- read.mtp('~/Downloads/gradebook.mtw')
+dir('Downloads')
+dir('Downloads', pattern = '.Rdata')
+dir('Downloads', pattern = '.RData')
+load('~/Downloads/body_image.RData')
+ls()
+head(data)
+load('lbd1-1.RData')
+load('~/Downloads/lbd1-1.RData')
+tv1
+library(lattice)
+histogram(~ time.women, data = tv1)
+histogram(~ time.men, data = tv1)
+histogram(~ time.women, data = tv1)
+histogram(~ time.men, data = tv1)
+histogram(~ time.men, data = tv1, width = 200)
+histogram(~ time.men, data = tv1, breaks = 200)
+histogram(~ time.men, data = tv1, breaks = 100)
+histogram(~ time.men, data = tv1, breaks = 50)
+histogram(~ time.men, data = tv1, breaks = 20)
+histogram(~ time.men, data = tv1, breaks = 10)
+histogram(~ time.men, data = tv1, breaks = 5)
+histogram(~ time.men, data = tv1, breaks = 10)
+histogram(~ time.men, data = tv1)
+library(ggplot2)
+qplot(time.men, data = tv1, geom = 'histogram')
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(20))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(5))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(50))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(100))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(200))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('gold'), colour = I('black'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'aliceblue'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'seagreen'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'olivegreen'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'lightred'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'pink'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gold'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'magenta'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'green'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray90'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray95'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray80'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray80', colour = NA))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray85', colour = NA))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black'))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray95', colour = NA))
+qplot(time.men, data = tv1, geom = 'histogram', binwidth = I(300), fill = I('steelblue'), colour = I('black')) + opts(panel.background = theme_rect(fill = 'gray90', colour = NA))
+load('~/Downloads/lbd1-2.RData')
+tv2
+head(tv2)
+qplot(time.men, data = tv2)
+qplot(time.women, data = tv2)
+load('~/Downloads/lbd1-3.RData')
+tv2
+qplot(time.women, data = tv3)
+qplot(time.men, data = tv3)
+histogram(~ time.men, data = tv2)
+histogram(~ time.men, data = tv3)
+update.packages()
+z = (26.5 - 24)/(3.8/sqrt(49))
+z
+0.5/(3.8/sqrt(49))
+1.645*3.8/sqrt(49)
+1.645*3.8/sqrt(49) + 23.5
+23.5 + 1.645*3.8/sqrt(49)
+z = (24.393 - 24)/(3.8/sqrt(49))
+z
+pnorm(0.72)
+x <- rbinom(100, 1)
+x <- rbinom(n=100, size = 2, prob = c(0.5, 0.5))
+x
+rle(x)
+plot(rle(x))
+plot(rle(x)$lengths)
+d <- rle(x)$lengths
+qplot(d)
+x <- rbinom(n=100, size = 2, prob = c(0.5, 0.5))
+qplot(d)
+d <- rle(x)$lengths
+qplot(d)
+d
+qplot(d, geom = 'density')
+qplot(d, geom = 'histdensity')
+qplot(d, geom = 'histdot')
+qplot(d, geom = 'dothist')
+histogram(~d)
+? histogram
+histogram(~d, type = "percent")
+histogram(~d, type = "density")
+histogram(~d, type = "percent")
+table(x)
+x
+table(rle(x))
+x <- rbinom(n=100, size = 1, prob = c(0.5, 0.5))
+x
+table(rle(x))
+d <- rle(x)$length
+d
+x
+qplot(d)
+x <- rbinom(40, 1, c(0.5, 0.5))
+qplot(rle(x)$length)
+qplot(rle(x)$length/40)
+qplot(rle(x)$length/)
+qplot(rle(x)$length)
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+x <- rbinom(40, 1, c(0.5, 0.5))
+histogram(~ rle(x)$length, type = 'percent')
+library(plyr)
+str(mtcars)
+library(reshape2)
+library(MASS)
+head(survey)
+head10 <- head(survey, 10)
+? survey
+load("/Users/ramnathvaidyanathan/Downloads/drinking.RData")
+head(data)
+head10 <- head(data, 10)
+head10
+subset(head10, Alcohol > 15)
+subset(head10, Alcohol >= 15)
+library(plyr)
+arrange(head10, Height)
+arrange(head10, -Height)
+arrange(head, Gender, Cheat)
+arrange(data, Gender, Cheat)
+? Find
+subset(data, Cheat == 1)
+dat1 <- subset(data, Cheat == 1)
+dat1 <- subset(data, Cheat == 1 && Gender == 'Male')
+dat1
+dat1 <- subset(data, Cheat == 1 & Gender == 'Male')
+dat1
+tab <- table(data$Cheat)
+head(tab)
+prop.table(tab)
+? prop.table
+prop.table(data$Cheat)
+prop.table(data$Cheat, 2)
+prop.table(data$Cheat, 1)
+prop.table(data$Cheat)
+pie(prop.table(tab))
+tab
+tab/sum(tab)
+opt <- c(align = 'center', alt = 'cap')
+names(opt)
+opt
+sprintf(":%s: %s", names(opt), opt)
+? mtcars
+x <- matrix(1, 5, 5)
+x
+rownames(x) <- 1:5
+x
+colnames(x) <- LETTERS[1:5]
+X
+x
+x <- ""
+x
+x <- as.matrix(rep("", 25), 5, 5)
+x
+x <- as.matrix(rep("", 25), NROW = 5, NCOL = 5)
+x
+x <- as.data.frame(rep("", 25), NROW = 5, NCOL = 5)
+x
+plot(1:10, 1:10)
+setwd('~/Desktop/Sindbad')
+library(googleVis)
+? gvisPieChart
+? install_github
+library(devtools)
+? install_github
+help(package = 'slidify')
+library(markdown)
+? markdownToHTML
+setwd('~/Desktop/R_Projects/temp_blog/')
+setwd('~/Desktop/R_Projects/temp_blog/themes/twitter')
+dir()
+library(yaml)
+y1 = yaml.load_file('theme.yml')
+y1
+y2 = yaml.load_file('theme3.yml')
+y2
+y1
+y1 == y2
+identical(y1, y2)
+y1
+y2
+setwd('~/Desktop/R_Projects/talks/intro-to-slidify/')
+slidify('index.Rmd')
+library(slidify)
+slidify('index.Rmd')
+system('open index.html')
+slidify('index.Rmd')
+slidify('test.Rmd')
+system('open test.html')
+slidify('test.Rmd')
+slidify('test.Rmd')
+slidify('test.Rmd')
+slidify('test.Rmd')
+update.packages()
+setwd('~/Desktop/R_Projects/temp_blog/widgets/quiz')
+dir()
+library(yaml)
+d1 = yaml.load_file('config.yml')
+d1
